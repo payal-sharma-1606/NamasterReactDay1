@@ -1,0 +1,29 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "This is initial repo for parcel with react",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/payal-sharma-1606/NamasterReactDay1.git"
+  },
+  "author": "Payal Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/payal-sharma-1606/NamasterReactDay1/issues"
+  },
+  "homepage": "https://github.com/payal-sharma-1606/NamasterReactDay1#readme",
+  "dependencies": {
+    "parcel": "^2.8.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.7",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "process": "^0.11.10"
+  }
+}
