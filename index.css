@@ -1,0 +1,13 @@
+.main-header{
+    padding: 5px;
+}
+
+.logoImg{
+    content:url("./images/unilever-logo.png");
+    height: 35px;
+    width: 35px;
+}
+
+.align-right{
+    text-align: end;
+}

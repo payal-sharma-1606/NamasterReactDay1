@@ -2,8 +2,9 @@
   "name": "y",
   "version": "1.0.0",
   "description": "This is initial repo for parcel with react",
-  "main": "App.js",
   "scripts": {
+    "build": "parcel build index.html",
+    "start": "parcel index.html",
     "test": "jest"
   },
   "repository": {
@@ -17,8 +18,10 @@
   },
   "homepage": "https://github.com/payal-sharma-1606/NamasterReactDay1#readme",
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "parcel": "^2.8.2",
     "react": "^18.2.0",
+    "react-bootstrap-icons": "^1.10.2",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {

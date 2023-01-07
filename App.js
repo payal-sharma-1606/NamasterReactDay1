@@ -1,31 +1,16 @@
 import React from "react";
-import * as ReactDOM from 'react-dom/client';
+import * as ReactDOM from "react-dom/client";
+import Header from "./Header";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const firstChildElement = React.createElement(
-  "h1",
-  {
-    id: "Heading 1",
-    key: "key1",
-  },
-  "This is heading 1"
-);
+// functional component is nothing but a function
+const HeaderComponent = () => {
+  return (
+    <div className="">
+      <Header />
+    </div>
+  );
+};
 
-const secondChildElement = React.createElement(
-  "h2",
-  {
-    id: "Heading 2",
-    key: "key2",
-  },
-  "This is heading 2"
-);
-
-const containerElement = React.createElement(
-  "div",
-  {
-    id: "container",
-  },
-  [firstChildElement, secondChildElement]
-);
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(containerElement);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<HeaderComponent />);
