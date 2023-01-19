@@ -19,10 +19,14 @@
   "homepage": "https://github.com/payal-sharma-1606/NamasterReactDay1#readme",
   "dependencies": {
     "bootstrap": "^5.2.3",
+    "jquery": "^3.6.3",
     "parcel": "^2.8.2",
+    "popper.js": "^1.16.1",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
     "react-bootstrap-icons": "^1.10.2",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.6.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.7",

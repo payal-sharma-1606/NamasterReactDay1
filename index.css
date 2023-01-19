@@ -3,11 +3,7 @@
 }
 
 .logoImg{
-    content:url("./images/unilever-logo.png");
-    height: 35px;
-    width: 35px;
-}
-
-.align-right{
-    text-align: end;
+    content:url("./src/assets/images/mcdImg.jfif");
+    height: 80px;
+    width: 80px;
 }
