@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { ImageCdnUrl, Restaurant_API_URL } from "../Constants/ApiUrls";
 import RestaurantCard from "./RestaurantCard";
+import { Link } from "react-router-dom";
 
 const Restaurant = () => {
   const [originalRestaurents, setOriginalRestaurants] = useState([]);
@@ -38,10 +38,16 @@ const Restaurant = () => {
           </button>
         </div>
         <div className="d-flex flex-wrap px-2">
-          {originalRestaurents.map((restaurant) => {
+          {originalRestaurents.map((restaurant, index) => {
             return (
               // restaurant.data.id
-              <RestaurantCard />
+              <Link
+                to={"/restaurant/" + restaurant.data.id}
+                key={restaurant.data.id}
+                className="col-sm-3 py-2 text-decoration-none text-dark"
+              >
+                <RestaurantCard key={index} {...restaurant.data} />
+              </Link>
             );
           })}
         </div>

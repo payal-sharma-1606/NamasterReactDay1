@@ -3,3 +3,6 @@ export const ImageCdnUrl =
 
 export const Restaurant_API_URL =
   "https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5204303&lng=73.8567437&sortBy=RELEVANCE&page_type=DESKTOP_WEB_LISTING";
+
+export const RestaurantDetails_API_URL =
+  "https://www.swiggy.com/dapi/menu/v4/full?lat=18.5204303&lng=73.8567437&menuId=";

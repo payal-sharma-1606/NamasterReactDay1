@@ -3,6 +3,7 @@ import AppLayout from "./AppLayout";
 import About from "./About";
 import Restaurant from "./Restaurant";
 import Contact from "./Contact";
+import RestaurantDetails from "./RestaurantDetails";
 
 export const RouterConfigs = createBrowserRouter([
   {
@@ -22,9 +23,13 @@ export const RouterConfigs = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
+      // {
+      //   path: "/restaurant/:resId",
+      //   element: <Restaurant />,
+      // },
       {
-        path: "/restaurant/:resId",
-        element: <Restaurant />,
+        path: "/restaurant/:id",
+        element: <RestaurantDetails />,
       },
     ],
   },

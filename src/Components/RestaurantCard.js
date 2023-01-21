@@ -1,17 +1,17 @@
 import Card from "react-bootstrap/Card";
-import Button from 'react-bootstrap/Button';
+import Button from "react-bootstrap/Button";
+import { useEffect } from "react";
+import { ImageCdnUrl } from "../Constants/ApiUrls";
 
-const RestaurantCard = () => {
+const RestaurantCard = (props) => {
+  useEffect(() => {});
+
   return (
-    <Card style={{ width: "250px" }} className="mx-2 mt-2 mb-2">
-      <Card.Img variant="top" src="../assets/images/mcdImg.jfif" />
+    <Card className="mx-2 mt-2 mb-2 h-100">
+      <Card.Img variant="top" src={ImageCdnUrl + props.cloudinaryImageId} />
       <Card.Body>
-        <Card.Title>Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        {/* <Button variant="primary">Go somewhere</Button> */}
+        <Card.Title>{props.name}</Card.Title>
+        <Card.Text>{props.cuisines.join(", ")}</Card.Text>
       </Card.Body>
     </Card>
   );
