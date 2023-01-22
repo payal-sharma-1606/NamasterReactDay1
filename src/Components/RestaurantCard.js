@@ -7,7 +7,7 @@ const RestaurantCard = (props) => {
   useEffect(() => {});
 
   return (
-    <Card className="mx-2 mt-2 mb-2 h-100">
+    <Card className="mx-2 mt-2 mb-2 h-100 shadow">
       <Card.Img variant="top" src={ImageCdnUrl + props.cloudinaryImageId} />
       <Card.Body>
         <Card.Title>{props.name}</Card.Title>

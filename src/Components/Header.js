@@ -5,17 +5,17 @@ import Nav from "react-bootstrap/Nav";
 const Header = () => {
   return (
     <>
-      <div className="d-flex justify-content-between px-2">
+      <div className="d-flex justify-content-between px-2 gradient">
         <img className="logoImg" />
-        <Nav>
+        <Nav className="align-items-center ">
           <Nav.Item>
-            <Link className="nav-link text-decoration-none text-dark" to="/">
+            <Link className="nav-link text-decoration-none text-white" to="/">
               Home
             </Link>
           </Nav.Item>
           <Nav.Item>
             <Link
-              className="nav-link text-decoration-none text-dark"
+              className="nav-link text-decoration-none text-white"
               to="/about"
             >
               About
@@ -23,7 +23,7 @@ const Header = () => {
           </Nav.Item>
           <Nav.Item>
             <Link
-              className="nav-link text-decoration-none text-dark"
+              className="nav-link text-decoration-none text-white"
               to="/contact"
             >
               Contact
@@ -31,7 +31,7 @@ const Header = () => {
           </Nav.Item>
           <Nav.Item>
             <Link className="nav-link" to="/">
-              <Cart className="text-danger" height={30} width={30} />
+              <Cart className="text-white" height={30} width={30} />
             </Link>
           </Nav.Item>
         </Nav>

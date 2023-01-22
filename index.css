@@ -3,7 +3,11 @@
 }
 
 .logoImg{
-    content:url("./src/assets/images/mcdImg.jfif");
-    height: 80px;
-    width: 80px;
+    content:url("./src/assets/images/starbucks.jpg");
+    height: 90px;
+    width: 115px;
+}
+
+.gradient {
+    background-image: linear-gradient(to right, black , #215621);
 }
