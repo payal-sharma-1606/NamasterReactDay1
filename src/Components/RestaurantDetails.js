@@ -30,7 +30,7 @@ const RestaurantDetails = () => {
 
   return (
     <>
-      <div className="mx-2 p-2 mt-2 mb-2 d-flex">
+      <div className="mx-5 p-2 mt-2 mb-2 d-flex">
         <div className="col-sm-3">
           <img
             alt={restaurantDetails?.name}
@@ -48,11 +48,11 @@ const RestaurantDetails = () => {
 
         {/* <div className="mx-2 align-items-center">{restaurantDetails?.name}</div> */}
       </div>
-      {restaurantMenuItems?.map((item, index) => {
+        {restaurantMenuItems?.map((item, index) => {
         return (
           <div
             key={index}
-            className="row mx-2 mt-2 mb-2 p-2 align-items-center border-bottom h-50 shadow-sm"
+            className="row mx-5 mt-2 mb-2 p-2 align-items-center border-bottom h-50 shadow-sm"
           >
             <div className="col-sm-6">
               <>
